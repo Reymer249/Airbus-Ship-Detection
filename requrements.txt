@@ -1,0 +1,10 @@
+numpy
+pandas
+scikit-image
+matplotlib
+os
+gc
+scikit-learn
+tensorflow
+keras (goes with tensorflow)
+tqdm
