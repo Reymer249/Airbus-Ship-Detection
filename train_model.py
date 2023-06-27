@@ -135,7 +135,7 @@ train_df['strat_group'] = train_df['ships'].map(lambda x: (x+1)//2).clip(0, 7)
 
 def sample_ships(in_df, base_rep_val=1500):
     if in_df['ships'].iloc[0] == 0:
-        return in_df.sample(base_rep_val//10) # even more strongly undersample no ships
+        return in_df.sample(base_rep_val//3) # even more strongly undersample no ships
     else:
         return in_df.sample(base_rep_val, replace=(in_df.shape[0]<base_rep_val))
 
